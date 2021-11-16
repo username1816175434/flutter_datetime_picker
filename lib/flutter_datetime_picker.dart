@@ -287,6 +287,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
         initialItem: widget.pickerModel.currentLeftIndex());
     middleScrollCtrl = FixedExtentScrollController(
         initialItem: widget.pickerModel.currentMiddleIndex());
+    widget.pickerModel.setRightIndex(0);
     rightScrollCtrl = FixedExtentScrollController(
         initialItem: widget.pickerModel.currentRightIndex());
   }
